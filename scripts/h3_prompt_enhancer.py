@@ -46,13 +46,14 @@ def read_prompt_from_stdin():
     return sys.stdin.read().strip()
 
 
-def call_api(base_url, api_key, model, messages, timeout=600):
+def call_api(base_url, api_key, model, messages, timeout=600,
+             temperature=0.7, max_tokens=4096):
     url = base_url.rstrip("/") + "/chat/completions"
     payload = {
         "model": model,
         "messages": messages,
-        "temperature": 0.7,
-        "max_tokens": 4096,
+        "temperature": temperature,
+        "max_tokens": max_tokens,
     }
     req = urllib.request.Request(
         url, data=json.dumps(payload).encode("utf-8"),
@@ -83,9 +84,16 @@ def main():
     ap.add_argument("--out", help="write brief to file instead of stdout")
     ap.add_argument("--noenhance", action="store_true",
                     help="echo the prompt unchanged (debug)")
+    ap.add_argument("--temperature", type=float, default=0.7)
+    ap.add_argument("--max-tokens", type=int, default=4096)
+    ap.add_argument("--prompt-file", help="raw prompt file se padho")
     args = ap.parse_args()
 
-    prompt = args.prompt if args.prompt else read_prompt_from_stdin()
+    if args.prompt_file:
+        with open(args.prompt_file, encoding="utf-8") as f:
+            prompt = f.read()
+    else:
+        prompt = args.prompt if args.prompt else read_prompt_from_stdin()
     if not prompt:
         ap.error("no prompt given (use --prompt or pipe stdin)")
 
@@ -105,7 +113,9 @@ def main():
         system = load_sysprompt()
         out = call_api(api_url, key or "", args.model,
                        [{"role": "system", "content": system},
-                        {"role": "user", "content": prompt}])
+                        {"role": "user", "content": prompt}],
+                       temperature=args.temperature,
+                       max_tokens=args.max_tokens)
 
     if args.out:
         with open(args.out, "w", encoding="utf-8") as f:
