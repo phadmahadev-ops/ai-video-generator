@@ -4,6 +4,14 @@ Free AI video generation (text/image-to-video) with **high face accuracy and
 human realism**, plus the **MiniMax H3 prompt enhancer** to get studio-grade
 prompt briefs.
 
+| Badge | Kaun use kare |
+|---|---|
+| [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb) | LTX video generation — Colab/T4 pe directly |
+| [![Kaggle](https://img.shields.io/badge/kaggle-%2320BEFF.svg?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com) | Notebook import karke T4 GPU pe chalao |
+| [![Setup Guide](https://img.shields.io/badge/Setup-Guide-blue)](docs/SETUP_GUIDE.md) | Naye users ke liye step-by-step |
+| [![Prompt Examples](https://img.shields.io/badge/Examples-Prompts-orange)](examples/prompt_examples.md) | Ready-made raw → enhanced pairs |
+
+
 ## 📦 What's inside
 
 | File | Purpose |
@@ -49,10 +57,14 @@ prompts).
 
 ## 🚀 Generate video (free, Kaggle T4)
 
-1. Open [`notebooks/ltx_video_kaggle.ipynb`](notebooks/ltx_video_kaggle.ipynb)
-2. Kaggle → New Notebook → Import → upload the `.ipynb`
+1. Open the notebook:
+   - [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb)
+   - ya Kaggle import: `notebooks/ltx_video_kaggle.ipynb` download karo
+2. [kaggle.com](https://www.kaggle.com) → Code → New Notebook → File → Import Notebook → upload
 3. Session options → Accelerator → **GPU T4 x2**, Internet ON
 4. Run all cells. For faces use **Step 4 (image-to-video)** with your portrait.
+
+Full beginner setup: [docs/SETUP_GUIDE.md](docs/SETUP_GUIDE.md) (Hindi+English)
 
 ## ⚖️ License
 
