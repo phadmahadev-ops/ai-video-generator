@@ -4,6 +4,11 @@ Free AI video generation (text/image-to-video) with **high face accuracy and
 human realism**, plus the **MiniMax H3 prompt enhancer** to get studio-grade
 prompt briefs.
 
+[![MIT](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
+[![Contributing](https://img.shields.io/badge/contributions-welcome-orange)](CONTRIBUTING.md)
+[![Quickstart](https://img.shields.io/badge/Quickstart-1page-purple)](docs/QUICKSTART.md)
+
 | Badge | Kaun use kare |
 |---|---|
 | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb) | LTX video generation — Colab/T4 pe directly |
