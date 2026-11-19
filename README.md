@@ -68,7 +68,11 @@ prompts).
 ## 🔗 Direct Kaggle links
 
 ```
+# Original (public, 236 upvotes):
 Kaggle Notebook : https://www.kaggle.com/code/gattootv/minimax-h3-turbo-int8-video-audio-reuploaded
+
+# Aapka copy (fork, mahadevfebfeb):
+Kaggle Notebook : https://www.kaggle.com/code/mahadevfebfeb/minimax-h3-turbo-int8-video-audio-reu-b1845d
 ```
 
 Login tabhi mangta hai jab run karna ho (Copy & Edit). Link khulne ke liye bas
