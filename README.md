@@ -57,14 +57,27 @@ prompts).
 
 ## 🚀 Generate video (free, Kaggle T4)
 
-1. Open the notebook:
-   - [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb)
-   - ya Kaggle import: `notebooks/ltx_video_kaggle.ipynb` download karo
-2. [kaggle.com](https://www.kaggle.com) → Code → New Notebook → File → Import Notebook → upload
-3. Session options → Accelerator → **GPU T4 x2**, Internet ON
-4. Run all cells. For faces use **Step 4 (image-to-video)** with your portrait.
+### 📚 Notebooks
+
+| Notebook | Kya hai | Status | Colab | Kaggle |
+|---|---|---|---|---|
+| `ltx_video_kaggle.ipynb` | Free text/image-to-video (realistic faces) | ✅ working (Nov 2026) | [![Open](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb) | [![Download for Kaggle](https://img.shields.io/badge/Download-Kaggle-20BEFF)](https://raw.githubusercontent.com/phadmahadev-ops/ai-video-generator/main/notebooks/ltx_video_kaggle.ipynb) |
+| `colab_prompt_enhancer.ipynb` | H3 prompt enhancer (Colab, needs API key) | ✅ working (Nov 2026) | [![Open](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/colab_prompt_enhancer.ipynb) | — |
+
+### Steps (Kaggle)
+
+1. **Download for Kaggle** button dabao (raw `.ipynb` download hoga)
+2. [kaggle.com](https://www.kaggle.com) → Sign in (free)
+3. Code → New Notebook → **File → Import Notebook** → download hui file upload karo
+4. Right panel → Settings → Accelerator → **GPU T4 x2**; Internet → **ON**
+5. Run all cells. For faces use **Step 4 (image-to-video)** with your portrait.
 
 Full beginner setup: [docs/SETUP_GUIDE.md](docs/SETUP_GUIDE.md) (Hindi+English)
+
+## 🔗 Related / inspiration
+
+- [TeamAIQ/Colab-notebooks](https://github.com/TeamAIQ/Colab-notebooks) — notebook collection (idea source)
+- [TeamAIQ/h3-lora-comparison](https://github.com/TeamAIQ/h3-lora-comparison) — MiniMax H3 LoRA (PDMD/DMAD/Fused turbo) speed-quality comparison
 
 ## ⚖️ License
 
