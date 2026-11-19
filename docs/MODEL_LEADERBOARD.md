@@ -1,5 +1,18 @@
 # 🏆 Video Model Leaderboard (free, text-to-video)
 
+## 🔒 Premium (closed/paid) vs Open — sach
+
+| Model | Type | Milta hai kaha |
+|---|---|---|
+| Kling 2.x | 🔒 closed | sirf official API (paid) — HF pe NAHI |
+| Veo 3 / Sora 2 / Runway Gen-4 / Pika 2 | 🔒 closed | sirf cloud (paid/limited) |
+| **LTX-2.5** | ✅ open | HF + GitHub + Kaggle/Colab |
+| **MiniMax H3** | ✅ open | HF + Kaggle T4 x2 |
+| **Wan2.2** | ✅ open | HF + Kaggle/ComfyUI |
+
+> HF sirf open-weight rakhta hai. Closed models download/kaggle pe nahi chalte.
+> Open top-3 (LTX-2.5, H3, Wan2.2) hi Kling-level ke free alternatives hain.
+
 Ratings 1-5 ⭐. Data: HuggingFace trending (Nov 2026) + community reports.
 "Hindi" = prompt/dialogue me Hindi kitni achhi chalti hai.
 
