@@ -9,6 +9,7 @@ prompt briefs.
 [![Contributing](https://img.shields.io/badge/contributions-welcome-orange)](CONTRIBUTING.md)
 [![Quickstart](https://img.shields.io/badge/Quickstart-1page-purple)](docs/QUICKSTART.md)
 [![Local Setup](https://img.shields.io/badge/Local-GPU_guide-teal)](docs/LOCAL_SETUP.md)
+[![Quality Tips](https://img.shields.io/badge/Quality-Tips-gold)](docs/QUALITY_TIPS.md)
 
 | Badge | Kaun use kare |
 |---|---|
