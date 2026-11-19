@@ -11,6 +11,18 @@ prompt briefs.
 [![Local Setup](https://img.shields.io/badge/Local-GPU_guide-teal)](docs/LOCAL_SETUP.md)
 [![Quality Tips](https://img.shields.io/badge/Quality-Tips-gold)](docs/QUALITY_TIPS.md)
 
+## ✨ Features
+
+- 📚 **3 ready-to-run notebooks** — MiniMax H3 · LTX-Video · prompt enhancer
+  (Kaggle/Colab, free)
+- 🏆 **Model leaderboard with ratings** — Face · Speed · Quality · Hindi
+  (9 models, direct links)
+- ✨ **MiniMax H3 prompt enhancer** — raw idea → studio-grade brief
+  (Hindi/English input)
+- 🖥️ **Local GPU guide** — apne GPU ke hisaab se model + RAM requirements
+- 🎛️ **Model Hub UI** — rated cards + enhancer (Gradio)
+- 📖 **Guides** — Quickstart · Setup · Quality tips · FAQ
+
 | Badge | Kaun use kare |
 |---|---|
 | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb) | LTX video generation — Colab/T4 pe directly |
