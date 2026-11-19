@@ -21,19 +21,33 @@ prompt briefs.
 | `notebooks/ltx_video_kaggle.ipynb` | Free text-to-video / image-to-video on Kaggle T4 (LTX-Video 2B distilled). Image-to-video keeps a person's face/identity. |
 | `notebooks/colab_prompt_enhancer.ipynb` | Use the prompt enhancer inside Colab before generating. |
 
-## 🧠 Best free models for realistic faces (Nov 2026)
+## 🧠 Best free models for realistic faces — Leaderboard (Nov 2026)
 
-| Model | Free? | GPU needed | Face/human realism | Notes |
-|---|---|---|---|---|
-| **LTX-2.5** (22B, distilled INT8) | ✅ weights, run on Kaggle T4 x2 | T4 x2 / 24GB | Very high | Audio+video sync, multi-shot; https://github.com/Lightricks/LTX-2 |
-| **LTX-Video** 13B/2B distilled | ✅ open | T4 (2B) / 24GB (13B) | High | Simple CLI (this repo's notebook); i2v with reference portrait |
-| **MiniMax H3** | ✅ weights | RTX 4090/24GB+ (or Kaggle T4 x2 INT8) | Very high | Use `h3_prompt_enhancer.py` for best results; audio+video |
-| **Wan 2.2** | ✅ open | 24GB | High | Long videos, good human motion |
-| HunyuanVideo | ✅ open | 24GB+ | Medium-high | Good general quality, heavier |
+Full ratings table: [docs/MODEL_LEADERBOARD.md](docs/MODEL_LEADERBOARD.md)
+
+| Rank | Model | Face | Speed | Quality | Hindi | Run on |
+|---|---|---|---|---|---|---|
+| 1 | **MiniMax H3** (Turbo INT8) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ | Kaggle T4 x2 (notebook included) |
+| 2 | **LTX-2.5** (22B distilled) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐½ | ⭐⭐ | T4 x2 / 24GB |
+| 3 | **Sulphur-2-base** | ⭐⭐⭐⭐½ | ⭐⭐⭐½ | ⭐⭐⭐⭐½ | ⭐ | 24GB |
+| 4 | **Wan2.2/2.1** (14B/5B) | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐ | 24GB / 12GB |
+| 5 | **HunyuanVideo** | ⭐⭐⭐½ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐ | 24GB+ |
+| 6 | **LTX-Video 2B distilled** | ⭐⭐⭐½ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐½ | ⭐⭐ | T4 single (notebook included) |
 
 > Face accuracy tips: always use **image-to-video with a reference portrait**
 > (don't generate a face from text alone), keep the same seed, and describe
-> the person with identical wording in every prompt.
+> the person with identical wording in every prompt. Hindi dialogue: H3
+> supports 11 languages (Hindi nahi) — English prompt likho ya TTS dub karo.
+
+## 🎛️ Model Hub UI (rated cards + prompt enhancer)
+
+```bash
+pip install -r requirements-ui.txt
+python ui/model_hub_ui.py      # ya: ui\launch_ui.bat
+```
+
+Open http://127.0.0.1:7860 — rated model cards, one-click links, aur
+built-in H3 prompt enhancer (raw idea → brief).
 
 ## 🚀 Prompt enhancer (MiniMax H3)
 
