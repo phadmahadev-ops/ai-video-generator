@@ -25,14 +25,17 @@ prompt briefs.
 
 Full ratings table: [docs/MODEL_LEADERBOARD.md](docs/MODEL_LEADERBOARD.md)
 
-| Rank | Model | Face | Speed | Quality | Hindi | Run on |
-|---|---|---|---|---|---|---|
-| 1 | **MiniMax H3** (Turbo INT8) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ | Kaggle T4 x2 (notebook included) |
-| 2 | **LTX-2.5** (22B distilled) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐½ | ⭐⭐ | T4 x2 / 24GB |
-| 3 | **Sulphur-2-base** | ⭐⭐⭐⭐½ | ⭐⭐⭐½ | ⭐⭐⭐⭐½ | ⭐ | 24GB |
-| 4 | **Wan2.2/2.1** (14B/5B) | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐ | 24GB / 12GB |
-| 5 | **HunyuanVideo** | ⭐⭐⭐½ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐ | 24GB+ |
-| 6 | **LTX-Video 2B distilled** | ⭐⭐⭐½ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐½ | ⭐⭐ | T4 single (notebook included) |
+| Rank | Model | Face | Speed | Quality | Hindi | Kaggle | Colab |
+|---|---|---|---|---|---|---|---|
+| 1 | **MiniMax H3** (Turbo INT8) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ | [Open](https://www.kaggle.com/code/gattootv/minimax-h3-turbo-int8-video-audio-reuploaded) | — |
+| 2 | **LTX-2.5** (22B distilled) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐½ | ⭐⭐ | [Search](https://www.kaggle.com/code?search=LTX-2.5) | — |
+| 3 | **Sulphur-2-base** | ⭐⭐⭐⭐½ | ⭐⭐⭐½ | ⭐⭐⭐⭐½ | ⭐ | [Search](https://www.kaggle.com/code?search=Sulphur-2) | — |
+| 4 | **Wan2.2/2.1** (14B/5B) | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐ | [Search](https://www.kaggle.com/code?search=Wan+2.2) | — |
+| 5 | **HunyuanVideo** | ⭐⭐⭐½ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐ | [Search](https://www.kaggle.com/code?search=HunyuanVideo) | — |
+| 6 | **LTX-Video 2B distilled** | ⭐⭐⭐½ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐½ | ⭐⭐ | [Import](https://raw.githubusercontent.com/phadmahadev-ops/ai-video-generator/main/notebooks/ltx_video_kaggle.ipynb) | [Open](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb) |
+
+> Kaggle link click karo → notebook page khulegi (login sirf run pe).
+> Colab link bina login khulta hai. Ban rating: docs/MODEL_LEADERBOARD.md
 
 > Face accuracy tips: always use **image-to-video with a reference portrait**
 > (don't generate a face from text alone), keep the same seed, and describe

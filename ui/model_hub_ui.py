@@ -29,38 +29,56 @@ MODELS = [
     {"rank": 1, "name": "MiniMax H3 (Turbo INT8)", "face": 5, "speed": 4,
      "quality": 5, "hindi": 2,
      "link": "https://www.kaggle.com/code/gattootv/minimax-h3-turbo-int8-video-audio-reuploaded",
+     "kaggle": "https://www.kaggle.com/code/gattootv/minimax-h3-turbo-int8-video-audio-reuploaded",
+     "colab": None,
      "note": "Best overall: video+audio, lip-sync, ref→video. T4 x2 on Kaggle."},
     {"rank": 2, "name": "LTX-2.5 (22B distilled)", "face": 5, "speed": 4,
      "quality": 4, "hindi": 2,
-     "link": "https://github.com/Lightricks/LTX-2",
+     "link": "https://www.kaggle.com/code?search=LTX-2.5",
+     "kaggle": "https://www.kaggle.com/code?search=LTX-2.5",
+     "colab": None,
      "note": "Audio+video, multi-shot, great faces. 24GB / T4 x2."},
     {"rank": 3, "name": "Sulphur-2-base", "face": 4, "speed": 3,
      "quality": 4, "hindi": 1,
-     "link": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+     "link": "https://www.kaggle.com/code?search=Sulphur-2",
+     "kaggle": "https://www.kaggle.com/code?search=Sulphur-2",
+     "colab": None,
      "note": "Fast-growing community favorite. 24GB."},
     {"rank": 4, "name": "Wan2.2/2.1 T2V (14B/5B)", "face": 4, "speed": 4,
      "quality": 4, "hindi": 1,
-     "link": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B",
+     "link": "https://www.kaggle.com/code?search=Wan+2.2",
+     "kaggle": "https://www.kaggle.com/code?search=Wan+2.2",
+     "colab": None,
      "note": "Very popular, solid motion. 24GB (14B) / 12GB (5B)."},
     {"rank": 5, "name": "HunyuanVideo", "face": 3, "speed": 3,
      "quality": 4, "hindi": 1,
-     "link": "https://huggingface.co/tencent/HunyuanVideo",
+     "link": "https://www.kaggle.com/code?search=HunyuanVideo",
+     "kaggle": "https://www.kaggle.com/code?search=HunyuanVideo",
+     "colab": None,
      "note": "Tencent, good scenes. 24GB+."},
     {"rank": 6, "name": "LTX-Video 2B distilled (legacy)", "face": 3,
      "speed": 5, "quality": 3, "hindi": 2,
-     "link": "https://huggingface.co/Lightricks/LTX-Video",
+     "link": "https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb",
+     "kaggle": "https://raw.githubusercontent.com/phadmahadev-ops/ai-video-generator/main/notebooks/ltx_video_kaggle.ipynb",
+     "colab": "https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb",
      "note": "Fastest free on a single T4; quick drafts."},
     {"rank": 7, "name": "Wan2.1-1.3B", "face": 3, "speed": 5,
      "quality": 3, "hindi": 1,
-     "link": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+     "link": "https://www.kaggle.com/code?search=Wan+1.3B",
+     "kaggle": "https://www.kaggle.com/code?search=Wan+1.3B",
+     "colab": None,
      "note": "Very light (8GB)."},
     {"rank": 8, "name": "FastFrames-L/S (Apple)", "face": 3, "speed": 5,
      "quality": 3, "hindi": 1,
-     "link": "https://huggingface.co/apple/FastFrames-L",
+     "link": "https://www.kaggle.com/code?search=FastFrames",
+     "kaggle": "https://www.kaggle.com/code?search=FastFrames",
+     "colab": None,
      "note": "New (Nov 2026), speed-first. 16GB/8GB."},
     {"rank": 9, "name": "LongCat-Video", "face": 4, "speed": 3,
      "quality": 4, "hindi": 1,
-     "link": "https://huggingface.co/meituan-longcat/LongCat-Video",
+     "link": "https://www.kaggle.com/code?search=LongCat-Video",
+     "kaggle": "https://www.kaggle.com/code?search=LongCat-Video",
+     "colab": None,
      "note": "Talking heads/avatars. 24GB."},
 ]
 
@@ -74,6 +92,12 @@ def star(n):
 def model_cards():
     html = ["<div style='display:flex;flex-wrap:wrap;gap:12px;'>"]
     for m in MODELS:
+        links = []
+        if m.get("kaggle"):
+            links.append(f"<a href='{m['kaggle']}' target='_blank' style='color:#20BEFF'>Kaggle</a>")
+        if m.get("colab"):
+            links.append(f"<a href='{m['colab']}' target='_blank' style='color:#f9ab00'>Colab</a>")
+        links.append(f"<a href='{m['link']}' target='_blank' style='color:#e2e2e2'>Open</a>")
         html.append(
             "<div style='border:1px solid #444;border-radius:12px;padding:12px;"
             "width:300px;background:#1e1e2e;color:#eee;'>"
@@ -81,7 +105,7 @@ def model_cards():
             f"Face {star(m['face'])} · Speed {star(m['speed'])} · "
             f"Quality {star(m['quality'])} · Hindi {star(m['hindi'])}<br>"
             f"<span style='color:#aaa'>{m['note']}</span><br>"
-            f"<a href='{m['link']}' target='_blank'>Open →</a>"
+            + " · ".join(links) +
             "</div>")
     html.append("</div>")
     return "".join(html)
