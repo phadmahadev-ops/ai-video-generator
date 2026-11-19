@@ -113,7 +113,7 @@ def build_ui():
         with gr.Row():
             with gr.Column(scale=2):
                 raw = gr.Textbox(label="Raw idea (Hindi/English dono chalta hai)",
-                                 placeholder="E.g. Ek ladki neon corridor me chal rahi hai, camera piche..."
+                                 placeholder="E.g. Ek ladki neon corridor me chal rahi hai, camera piche...",
                                  lines=4)
                 api_url = gr.Textbox(label="OpenAI-compatible API URL",
                                      value=os.environ.get("H3_API_URL", ""),
