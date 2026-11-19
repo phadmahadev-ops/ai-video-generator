@@ -8,6 +8,7 @@ prompt briefs.
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
 [![Contributing](https://img.shields.io/badge/contributions-welcome-orange)](CONTRIBUTING.md)
 [![Quickstart](https://img.shields.io/badge/Quickstart-1page-purple)](docs/QUICKSTART.md)
+[![Local Setup](https://img.shields.io/badge/Local-GPU_guide-teal)](docs/LOCAL_SETUP.md)
 
 | Badge | Kaun use kare |
 |---|---|
@@ -46,6 +47,21 @@ Full ratings table: [docs/MODEL_LEADERBOARD.md](docs/MODEL_LEADERBOARD.md)
 > (don't generate a face from text alone), keep the same seed, and describe
 > the person with identical wording in every prompt. Hindi dialogue: H3
 > supports 11 languages (Hindi nahi) — English prompt likho ya TTS dub karo.
+
+## 🖥️ Local PC (apne GPU pe) — GPU ke hisaab se
+
+Full guide + setup: [docs/LOCAL_SETUP.md](docs/LOCAL_SETUP.md)
+
+| Aapka GPU (VRAM) | Best model | System RAM |
+|---|---|---|
+| 4GB (laptop) | ❌ cloud use karo (Kaggle/Colab) | 16GB |
+| 6–8GB | Wan2.1-1.3B · LTX 2B distilled · FastFrames-S | 16GB |
+| 10–12GB | Wan2.2-5B · LTX 2B full · FastFrames-L | 16–32GB |
+| 16GB | Wan2.2-5B full · HunyuanVideo 480p | 32GB |
+| **24GB** | **MiniMax H3** · **LTX-2.5** · Sulphur-2 · Wan14B | 32–64GB |
+
+> 💡 Best GPU: **RTX 4090 (24GB)** · Budget: **RTX 3060 12GB**.
+> Aapka GTX 1650 4GB: generation cloud pe, enhance local (`video-enhance` repo).
 
 ## 🎛️ Model Hub UI (rated cards + prompt enhancer)
 
