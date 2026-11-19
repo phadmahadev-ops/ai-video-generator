@@ -63,7 +63,16 @@ prompts).
 |---|---|---|---|---|
 | `ltx_video_kaggle.ipynb` | Free text/image-to-video (realistic faces) | ✅ working (Nov 2026) | [![Open](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/ltx_video_kaggle.ipynb) | [![Download for Kaggle](https://img.shields.io/badge/Download-Kaggle-20BEFF)](https://raw.githubusercontent.com/phadmahadev-ops/ai-video-generator/main/notebooks/ltx_video_kaggle.ipynb) |
 | `colab_prompt_enhancer.ipynb` | H3 prompt enhancer (Colab, needs API key) | ✅ working (Nov 2026) | [![Open](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/phadmahadev-ops/ai-video-generator/blob/main/notebooks/colab_prompt_enhancer.ipynb) | — |
-| `minimax_h3_kaggle.ipynb` | MiniMax H3 Turbo INT8 — text/image/reference→video + audio, 4-step PDMD/DMAD/fused (T4 x2) | ✅ working (Nov 2026) | — | [![Download for Kaggle](https://img.shields.io/badge/Download-Kaggle-20BEFF)](https://raw.githubusercontent.com/phadmahadev-ops/ai-video-generator/main/notebooks/minimax_h3_kaggle.ipynb) |
+| `minimax_h3_kaggle.ipynb` | MiniMax H3 Turbo INT8 — text/image/reference→video + audio, 4-step PDMD/DMAD/fused (T4 x2) | ✅ working (Nov 2026) | — | [![Open on Kaggle](https://img.shields.io/badge/Open-Kaggle-20BEFF)](https://www.kaggle.com/code/gattootv/minimax-h3-turbo-int8-video-audio-reuploaded) |
+
+## 🔗 Direct Kaggle links
+
+```
+Kaggle Notebook : https://www.kaggle.com/code/gattootv/minimax-h3-turbo-int8-video-audio-reuploaded
+```
+
+Login tabhi mangta hai jab run karna ho (Copy & Edit). Link khulne ke liye bas
+click karo — khulega.
 
 > Attribution: `minimax_h3_kaggle.ipynb` is a public re-upload of the AIQUEST Academy H3 notebook (by *Gattoo TV*, [Kaggle](https://www.kaggle.com/code/gattootv/minimax-h3-turbo-int8-video-audio-reuploaded), 236 upvotes). Downloaded for convenience; run it from our repo or directly on Kaggle.
 
